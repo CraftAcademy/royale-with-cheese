@@ -1,10 +1,11 @@
 class LandingController < ApplicationController
   def index
+
   end
 
   def search
-    genre = params[:genre].capitalize
-    movie_genre = Tmdb::Genre.movie_list.select{ |m| m.name == genre }.first
+    @genre = params[:genre].capitalize
+    movie_genre = Tmdb::Genre.movie_list.select{ |m| m.name == @genre }.first
 
     if movie_genre.nil?
       flash[:notice] = 'wrong entry'

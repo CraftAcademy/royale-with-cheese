@@ -3,25 +3,26 @@
   <h2>Movie suggestions</h2>
   <img src="https://www.300feetout.com/wp-content/uploads/2016/12/holiday_2016_popcorn_cheese.jpg" width="385px" height="320px"/>
 </div>
-  <nav class="navbar navbar-light">
-    <%= form_tag(search_path, class: 'form-inline') do %>
+  <nav class="navbar navbar-light" id="movie-search">
+    <%= form_tag('/search#movies-header', class: 'form-inline') do %>
       <%= text_field_tag :genre, "", class: 'movie-input form-control', placeholder: 'Movie Genre' %>
       <%= submit_tag 'Search', class: 'movie-input btn btn-outline-primary my-2 my-sm-0' %>
     <% end %>
   </nav>
 
-
-<% if @movies %>
+ <% if @movies %>
   <% if @movies.results.any? %>
-    <h2> Results </h2>
-      <ul>
-        <% @movies.results.take(5).each do |movie| %>
-        <li>
-          <img src="http://image.tmdb.org/t/p/w185<%=movie.poster_path %>" alt="" >
-          <b> <%= movie.title %> </b> <br>
+    <div id="movies-header">
+      <h2> <%= "Results for #{@genre}"%> </h2>
+    </div>
+    <div class="movies">
+      <% @movies.results.take(5).each do |movie| %>
+        <div class="movie-prop">
+            <img src="http://image.tmdb.org/t/p/w185<%=movie.poster_path %>" alt="" >
+            <h4> <%= movie.title %> </h4> <br>
             <p> <%= movie.overview %> </p>
-        </li>
+        </div>
         <% end %>
-      </ul>
+      </div>
   <% end %>
 <% end %>
