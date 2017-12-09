@@ -1,4 +1,8 @@
 
+.header {
+  margin-top: 40px;
+}
+
 .header h1 {
   font-size: 58px;
   font-family: 'Bungee', sans-serif;
@@ -34,4 +38,17 @@
 .btn:hover {
   font-size: 18px;
   border-width: 1.5px;
+}
+
+.nav-item img {
+  border-radius: 100%;
+}
+
+.nav-item {
+  padding: 2px 7px;
+  margin: auto;
+}
+
+.navbar-expand-lg {
+  border-bottom: 5px solid rgb(47, 184, 248);
 }
