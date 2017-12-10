@@ -1,6 +1,7 @@
 
+
 .header {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .header h1 {
@@ -9,7 +10,8 @@
   letter-spacing: 5px;
 }
 
-.header h2 {
+h2 {
+  text-align: center;
   letter-spacing: 3px;
   margin-top: 35px;
   font-size: 40px;
@@ -58,10 +60,10 @@
 #movies-header {
   margin: 85px 0;
   color: gold;
-  font-size: 56px;
+  font-size: 62px;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 3px;
+  font-family: 'Permanent Marker', sans-serif;
+  letter-spacing: 4px;
 }
 
 .movies {
@@ -72,23 +74,103 @@
 
 
 .movie-prop {
-  width: 40%;
+  width: 33%;
   margin: 30px auto;
   text-align: center;
 }
 
 .movie-prop h4 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.5px;
   margin: auto;
   padding-bottom: 10px;
-  width: 40%;
+  width: 45%;
   border-bottom: 3px solid gold;
 }
 
 .movie-prop p {
+  line-height: 1.5;
   margin: auto;
   width: 75%;
+  letter-spacing: 1.5px;
+  font-family: 'Rubik', sans-serif;
 }
 
 .movie-prop h4 {
   margin-top: 25px;
+}
+
+.flash-alert {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(248, 103, 103, 0.4);
+}
+
+.flash-notice {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(44, 209, 19, 0.4);
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.field {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.field label {
+  padding-bottom: 2px;
+}
+
+.remember-field {
+  letter-spacing: 1.5px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+}
+
+.user-input {
+  letter-spacing: 1px;
+  padding: 4px 0;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.input {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.actions {
+  text-align: center;
+}
+
+.devise-btn {
+  margin-top: 50px;
+}
+
+.devise-link {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#error_explanation {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#error_explanation li {
+  text-align: center;
+  list-style: none;
+  color: rgb(248, 103, 103);
+}
+
+#error_explanation h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-family: 'Rubik', sans-serif;
 }
