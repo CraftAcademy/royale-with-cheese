@@ -5,7 +5,7 @@
 </div>
   <nav class="navbar navbar-light" id="movie-search">
     <%= form_tag('/search#movies-header', class: 'form-inline') do %>
-      <%= text_field_tag :genre, "", class: 'movie-input form-control', placeholder: 'Movie Genre' %>
+      <%= text_field_tag :genre, "", class: 'movie-search form-control', placeholder: 'Movie Genre' %>
       <%= submit_tag 'Search', class: 'movie-input btn btn-outline-primary my-2 my-sm-0' %>
     <% end %>
   </nav>
